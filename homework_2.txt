@@ -1,0 +1,35 @@
+1. Перемещение между каталогами:
+	- относительный путь: cd Рабочий\ стол/
+	- полный путь: cd /home/thevasina/Загрузки
+	- быстро вернуться в домашний каталог: cd~
+	- подняться на уровень выше: cd ..
+
+2. Создание файла с наполнением:
+	- touch file.txt + скрин1
+	- создание с помощью vim - скрин2
+	- создание с помощью nano - скрин3
+
+3. Создание копий файлов:
+	- cp /home/thevasina/file2.txt /home/thevasina/Загрузки/
+	- cp /home/thevasina/myfile: /home/thevasina/Видео/myfile1
+	- cp /home/thevasina/Загрузки/file2.txt .
+	- cp file2.txt file3.txt
+
+4. Создание директорий:
+	- mkdir folder
+	- mkdir /home/thevasina/Загрузки/newfolder
+	- mkdir -p /home/thevasina/desk/desk/desk/
+
+5. Перемещение файла:
+	- mv /home/thevasina/file2.txt /home/thevasina/folder/
+	- mv /home/thevasina/myfile: .
+
+6. Авторизация по ключу:
+	- создание пары ключей - ssh-keygen
+	- копирование ключа на linux - ssh-copy-id thevasina@192.168.68.135
+	- после этого можно подключаться без пароля - ssh thevasina@192.168.68.135
+
+
+
+
+
