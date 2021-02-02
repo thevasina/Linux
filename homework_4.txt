@@ -1,0 +1,28 @@
+1.
+- echo 'This is a test message' > test1.txt
+- cat /etc/* 2> test2.txt
+
+2.  
+- ls -l | cut -d' ' -f1 | sort | uniq | grep -v total
+
+3.
+- sudo nano /etc/ssh/sshd_config
+- ps -ef | grep sshd
+- sudo systemctl restart sshd 
+
+- sudo nano /etc/ssh/sshd_config
+- ps -ef | grep sshd
+- systemctl reload sshd
+
+при restart идентификатор процесса изменяется, а при перезагрузке - нет
+
+- cat > test3.txt
+- this is the part 2 of task 3
+- control + d
+
+сигнал о завершении ввода данных в файл
+
+4. 
+- mc
+- ps -ef | grep mc
+- kill -9 1885
