@@ -1,0 +1,39 @@
+1. 
+cat > first.sh
+#!/bin/bash
+sed '/^$/d' main.txt | tr [:lower:] [:upper:] > out.txt
+chmod +x first.sh
+./first.sh
+
+2. 
+for year in {2010..2017}
+do
+	mkdir $year
+	for month in {01..12}
+	do
+		mkdir $year/$month
+		for file_number in {001..003}
+		do
+			echo Файл $file_number > $year/$month/$file_number.txt
+		done
+	done
+done
+
+3. 
+ls -l | grep -v '^итого' | awk '{print $1} ' | sort | uniq
+
+4.
+cat /var/log/syslog | grep -i systemd
+
+5. 
+echo sudo reebot | at 11:53 p.m. 08/02/2021
+
+6.
+nano backup.sh
+
+!#/bin/bash
+sudo tar -czf /home/ubuntu/etc_arhihed.tar.gz /etc
+
+crontab -e
+12 12 * * * /home/ubuntu/backup.sh
+
